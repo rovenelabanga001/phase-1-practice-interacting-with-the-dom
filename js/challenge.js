@@ -38,7 +38,7 @@ document.querySelector("#heart").addEventListener("click", () => {
 
   let existingLikeItem = document.getElementById(`like-${counterVal}`);
   if (existingLikeItem) {
-    existingLikeItem.innerText = `${counterValue} has been clicked ${likeCounts[counterValue]} times`;
+    existingLikeItem.innerText = `${counterValue} has been liked ${likeCounts[counterValue]} times`;
   } else {
     let newLikeItem = document.createElement("li");
     newLikeItem.id = `like-${counterVal}`;
